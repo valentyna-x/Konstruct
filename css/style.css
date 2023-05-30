@@ -4,6 +4,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html,body {
@@ -14,25 +16,36 @@ html,body {
     color: var(--font-color);
 }
 
+.main {
+    position: relative;
+    z-index: 0;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 13px 0;
+    z-index: 1;
+    background: #fff;
+   
 }
 
 .flex-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    }
 
-.header {
-    padding: 13px 120px;
-}
-
-.navigation {
+.left_side {
     display: flex;
-    text-align: left;
+    gap: 50px;
 }
+
 a{
     text-decoration: none;
     color: black;
@@ -40,7 +53,6 @@ a{
 
 .menu {
     display: flex;
-    justify-content: left;
     gap: 10px;
     list-style: none;
     
@@ -58,10 +70,14 @@ a{
     font-weight: 400;
 }
 
-.main {
-    margin-left: 407px;
-    }
+.flex_container {
+    display: flex;
+    justify-content: space-between;
+}
 
+.content {
+    max-width: 785px;
+}
 .italic {
     font-style: italic;
     }
@@ -99,34 +115,36 @@ a{
     height: 8px;
     background-color: #000;
 }
-
+.sidebar__item {
+    list-style: none;
+    margin-bottom: 70px;
+    padding: 0px 0px 10px;  
+    border-bottom: 1px solid #BDBDBD;
+}
 
 .sidebar {
-    width: 277px;
-    position: fixed;
-    z-index: 1;
-    top: 0px;
-    left: 120px;
-    padding: 70px 0px;
-    }
+    max-width: 385px;
+    height: 100%;
+    position: sticky;
+    top: 95px;
+}
 
-.sidebar_content, h2 {
+.sidebar_content {
     font-family: 'Francois One';
     font-weight: 400;
     font-size: 22px;
     text-transform: uppercase;
     margin-bottom: 70px;
+    list-style: none;
+}
+::after {
+    padding: 0px 0px 10px;  
+    border-bottom: 1px solid #BDBDBD;
 }
 
 .bg_picture {
-    position: absolute;
-    z-index: -0.9;
-    top: 120px;
-    left: 680px;
-    right: -500px;
-    bottom: 0;
-    margin: auto;
-    min-width: 50%;
-    min-height: 50%; 
-    opacity: 0.5;
+    position: fixed;
+    z-index: -1;
+    top: 100px;
+    right: 0;
 }
