@@ -78,6 +78,7 @@ a{
 .content {
     max-width: 785px;
 }
+
 .italic {
     font-style: italic;
     }
@@ -121,13 +122,18 @@ a{
     border-bottom: 1px solid #BDBDBD;
 }
 
+h2 {
+    font-family: 'Francois One';
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
 .sidebar {
     max-width: 385px;
     height: 100%;
     position: sticky;
     top: 95px;
-    
-
 }
 
 .sidebar_content {
@@ -138,6 +144,7 @@ a{
     margin-bottom: 70px;
     list-style: none;
 }
+
 ::after {
     padding: 0px 0px 10px;  
     border-bottom: 1px solid #BDBDBD;
