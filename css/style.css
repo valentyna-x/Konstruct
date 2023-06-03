@@ -16,6 +16,10 @@ html,body {
     color: var(--font-color);
 }
 
+p {
+    font-size: 22px;
+}
+
 .main {
     position: relative;
     z-index: 0;
